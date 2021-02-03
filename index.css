@@ -1,0 +1,98 @@
+@import "reset.css";
+
+:root {
+  --prm-col: #75b79e;
+}
+
+@font-face {
+  font-family: "Jal_Onuel";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Jal_Onuel" !important;
+}
+
+.no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none;
+}
+
+.wrap {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.half-content {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.half-content:nth-child(1) {
+  background-color: white;
+  color: var(--prm-col);
+}
+
+.main-nav {
+  line-height: 100px;
+}
+
+.main-nav li {
+  cursor: pointer;
+}
+
+.half-content:nth-child(2) {
+  background-color: var(--prm-col);
+  color: white;
+}
+
+.contents {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#question {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+#eng {
+  width: 500px;
+  height: 400px;
+  word-wrap: break-word !important;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 50px;
+}
